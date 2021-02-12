@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "build:cli": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "build:external": "webpack --config ./external/webpack-custom.config.js"
   },
   "author": "Andrés Sanabria <andrs.dev@gmail.com>",
   "license": "ISC",
