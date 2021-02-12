@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "build:cli": "webpack --entry ./index.js --output ./bundle.js --mode development",
-    "build:external": "webpack --config ./external/webpack-custom.config.js"
+    "build:external": "webpack --config ./external/webpack-custom.config.js",
+    "build:multiple": "webpack --config ./multiple-entry-points/webpack.config.js"
   },
   "author": "Andrés Sanabria <andrs.dev@gmail.com>",
   "license": "ISC",
