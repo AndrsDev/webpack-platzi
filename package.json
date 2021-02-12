@@ -1,0 +1,15 @@
+{
+  "name": "webpack-platzi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Andrés Sanabria <andrs.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2"
+  }
+}
