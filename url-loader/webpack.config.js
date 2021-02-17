@@ -23,6 +23,15 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 90000,
+          }
+        }
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader', //For development this is faster than using MinCSSExtractPlugin. For production the MinCSSExtractPlugin must be used.

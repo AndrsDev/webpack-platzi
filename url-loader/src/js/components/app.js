@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import wallpaper from '../../assets/wallpaper.jpg'
 
 function App(){
 
@@ -11,7 +12,7 @@ function App(){
 
   return (
     <div onClick={handleClick}>
-      Hello from React: {`${value}`}
+      <img src={wallpaper}/>
     </div>
   )
 }
