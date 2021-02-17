@@ -35,7 +35,13 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader', //For development this is faster than using MinCSSExtractPlugin. For production the MinCSSExtractPlugin must be used.
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
         ]
       },
     ]
