@@ -17,12 +17,15 @@
     "build:prepro": "webpack --config ./prepro/webpack.config.js",
     "build:chunks": "webpack --config ./chunks/webpack.config.js",
     "build:dll": "webpack --config ./dll/webpack.dll.config.js",
-    "build:chunks-fast": "webpack --config ./dll/webpack.config.js"
+    "build:chunks-fast": "webpack --config ./dll/webpack.config.js",
+    "build:dynamic-dll": "webpack --config ./dynamic-imports/webpack.dll.config.js",
+    "build:dynamic": "webpack --config ./dynamic-imports/webpack.config.js"
   },
   "author": "Andrés Sanabria <andrs.dev@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.12.16",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/plugin-transform-runtime": "7.12.15",
     "@babel/preset-env": "7.12.16",
     "@babel/preset-react": "7.12.13",
